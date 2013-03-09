@@ -1,13 +1,13 @@
 %define		pkg	mkdirp
 Summary:	Recursively mkdir, like "mkdir -p"
 Name:		nodejs-%{pkg}
-Version:	0.3.4
+Version:	0.3.5
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/substack/node-mkdirp
 Source0:	http://registry.npmjs.org/mkdirp/-/%{pkg}-%{version}.tgz
-# Source0-md5:	8dd299eb49e17f94e145292040998f32
+# Source0-md5:	8e0debb3900aab1713fe50f9b27228d3
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
@@ -34,6 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.markdown
+%doc readme.markdown
 %{nodejs_libdir}/%{pkg}
 %{_examplesdir}/%{name}-%{version}
